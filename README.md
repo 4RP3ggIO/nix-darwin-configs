@@ -10,7 +10,7 @@ This is intended to be used as a starting point, so it would make most sense, to
 
 ## Quickstart:
 
-Assuming you want to build the `m2-macbook-air` output, you'd use these commands:
+Assuming you want to build the `m1-macbook-pro` output, you'd use these commands:
 
 ```
 git clone https://github.com/heywoodlh/nix-darwin-flake
