@@ -71,24 +71,24 @@
       "zoom"
     ];
     masApps = {
-      "1Password for Safari" = 1569813296
-      "AdBlock" = 1402042596
-      "ClassLinkExtension" = 1436703417
-      "djay Pro" = 1302002064
-      "djay Pro AI" = 450527929
-      "DuckDuckGo Privacy for Safari" = 1482920575
-      "Final Cut Pro" = 424389933
-      "GarageBand" = 682658836
-      "iMovie" = 408981434
-      "Keynote" = 409183694
-      "Logic Pro" = 634148309
-      "MainStage" = 634159523
-      "Numbers" = 409203825
-      "Pages" = 409201541
-      "PayPal Honey" = 1472777122
-      "WiFi Explorer" = 494803304
-      "WiFi Signal" = 525912054
-      "Xcode" = 497799835
+      "1Password for Safari" = 1569813296;
+      "AdBlock" = 1402042596;
+      "ClassLinkExtension" = 1436703417;
+      "djay Pro" = 1302002064;
+      "djay Pro AI" = 450527929;
+      "DuckDuckGo Privacy for Safari" = 1482920575;
+      "Final Cut Pro" = 424389933;
+      "GarageBand" = 682658836;
+      "iMovie" = 408981434;
+      "Keynote" = 409183694;
+      "Logic Pro" = 634148309;
+      "MainStage" = 634159523;
+      "Numbers" = 409203825;
+      "Pages" = 409201541;
+      "PayPal Honey" = 1472777122;
+      "WiFi Explorer" = 494803304;
+      "WiFi Signal" = 525912054;
+      "Xcode" = 497799835;
     };
   };
 }
