@@ -3,7 +3,7 @@
 
 let
   hostname = "nix-mac-mini";
-  username = "heywoodlh";
+  username = "gavin.anderson";
 in {
   imports = [
     ../roles/defaults.nix
