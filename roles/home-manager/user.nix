@@ -11,16 +11,10 @@
       search.force = true; # This is required so the build won't fail each time
       # View extensions here: https://github.com/nix-community/nur-combined/blob/master/repos/rycee/pkgs/firefox-addons/generated-firefox-addons.nix
       extensions = with pkgs.nur.repos.rycee.firefox-addons; [
-        bitwarden
+        onepassword-password-manager
         darkreader
-        firenvim
-        gnome-shell-integration
-        okta-browser-plugin
         privacy-badger
-        private-relay
-        redirector
         ublock-origin
-        vimium
       ]; 
       userChrome = ''
         /* * Do not remove the @namespace line -- it's required for correct functioning */
