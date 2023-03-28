@@ -6,7 +6,7 @@
     enable = true;
     onActivation.autoUpdate = true;
     onActivation.upgrade = true;
-    onActivation.cleanup = "zap"; # Uncomment this if you want all brew packages not defined in this file to be removed when updated
+    onActivation.cleanup = "zap";
     brews = [
       "gnutls"
       "cask"
