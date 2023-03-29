@@ -53,6 +53,7 @@
       "google-chrome"
       "handbrake"
       "istat-menus"
+      "iterm2"
       "joplin"
       "jumpcut"
       "lulu"
