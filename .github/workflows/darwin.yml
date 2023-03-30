@@ -5,7 +5,7 @@ on:
     branches:
     - 'master'
     paths:
-    - darwin/**
+    - hosts/** not darwin/**
     - .github/workflows/darwin.yml
     - roles/**
     - '!darwin/**.md'

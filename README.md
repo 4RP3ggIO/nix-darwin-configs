@@ -10,12 +10,12 @@ This is intended to be used as a starting point, so it would make most sense, to
 
 ## Quickstart:
 
-Assuming you want to build the `m2-macbook-air` output, you'd use these commands:
+Assuming you want to build the `m1-macbook-pro` output, you'd use these commands:
 
 ```
 git clone https://github.com/heywoodlh/nix-darwin-flake
-cd nix-darwin-flake
-darwin-rebuild switch --flake .#m2-macbook-air
+cd nix-darwin-configs
+darwin-rebuild switch --flake .#m1-macbook-pro
 ``` 
 
 ## What is a Nix Flake and how does it work?
@@ -56,27 +56,27 @@ This snippet shows all of the inputs in the Flake:
 
 Each MacOS build is an output in [flake.nix](./flake.nix). This repository comes with two outputs/MacOS builds:
 
-- `m2-macbook-air`: an example build for settings required for an M2 Macbook Air
+- `m1-macbook-pro`: an example build for settings required for an M1 Macbook Pro
 - `intel-macbook`: an example build for settings required for an Intel Macbook
 
 Each output/MacOS build has a corresponding file in [./hosts](./hosts) where configurations should be imported from the [./roles](./roles) directory. Any specific configuration for a particular machine should live in its file in the [./hosts](./hosts) directory.
 
-This snippet from `flake.nix` shows the Flake's output named `m2-macbook-air` and its corresponding config file `./hosts/m2-macbook-air.nix` being imported:
+This snippet from `flake.nix` shows the Flake's output named `m1-macbook-pro` and its corresponding config file `./hosts/m1-macbook-pro.nix` being imported:
 
 ```
   ...
   outputs = inputs@{ self, nixpkgs, darwin, home-manager, jovian-nixos, nur, ... }: {
     darwinConfigurations = {
       # m1-macbook 
-      "m2-macbook-air" = darwin.lib.darwinSystem {
+      "m1-macbook-pro" = darwin.lib.darwinSystem {
         system = "aarch64-darwin";
         specialArgs = inputs;
-        modules = [ ./hosts/m2-macbook-air.nix ];
+        modules = [ ./hosts/m1-macbook-pro.nix ];
       };
   ...
 ```
 
-In `./hosts/m2-macbook-air.nix`, we can define which configurations we want to select from the `[./roles](./roles)` directory, for example:
+In `./hosts/m1-macbook-pro.nix`, we can define which configurations we want to select from the `[./roles](./roles)` directory, for example:
 
 ```
 ...
@@ -124,7 +124,7 @@ Then, create a new file in `./hosts/mac-mini.nix` with the following configurati
 
 let
   hostname = "mac-mini";
-  username = "heywoodlh";
+  username = "gavin.anderson";
 in {
   imports = [
     ../roles/m1.nix
@@ -142,7 +142,7 @@ in {
   # Set hostname
   networking.hostName = "${hostname}";
 
-  # Always show menu bar on M2 Macbook Air 
+  # Always show menu bar on M1 Macbook Pro 
   system.defaults.NSGlobalDomain._HIHideMenuBar = lib.mkForce false;
 
   system.stateVersion = 4;
@@ -157,6 +157,6 @@ darwin-rebuild switch --flake .#mac-mini
 
 ## Add a new user configuration
 
-By default, this example creates a user named `heywoodlh`, defined in `./roles/users/heywoodlh.nix`.
+By default, this example creates a user named `gavin.anderson`, defined in `./roles/users/gavin.anderson.nix`.
 
-Let's say we want a new user named `example`, copy `./roles/users/heywoodlh.nix` to `./roles/users/example.nix`. Then edit any references to `heywoodlh` to `example`. 
+Let's say we want a new user named `example`, copy `./roles/users/gavin.anderson.nix` to `./roles/users/example.nix`. Then edit any references to `gavin.anderson` to `example`. 

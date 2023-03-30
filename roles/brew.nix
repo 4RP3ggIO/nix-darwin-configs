@@ -52,6 +52,7 @@
       "google-chrome"
       "handbrake"
       "istat-menus"
+      "iterm2"
       "joplin"
       "lulu"
       "microsoft-remote-desktop"

@@ -1,11 +1,12 @@
-# Remember that this is used for GitHub Actions to test builds
 { config, pkgs, lib, home-manager, nur, ... }:
 
+
 let
-  hostname = "nix-mac-mini";
-  username = "gavin.anderson";
+  hostname = "M1Mini";
+  username = "gavin";
 in {
   imports = [
+    ../roles/m1.nix
     ../roles/defaults.nix
     ../roles/brew.nix
     ../roles/yabai.nix
@@ -19,6 +20,9 @@ in {
 
   # Set hostname
   networking.hostName = "${hostname}";
+
+  # Always show menu bar
+  # system.defaults.NSGlobalDomain._HIHideMenuBar = lib.mkForce false;
 
   system.stateVersion = 4;
 }
