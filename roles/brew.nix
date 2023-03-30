@@ -15,7 +15,6 @@
       "ifstat"
       "iperf"
       "ipmitool"
-      "iproute2mac"
       "m-cli"
       "mas"
       "nmap"
