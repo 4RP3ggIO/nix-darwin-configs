@@ -60,6 +60,7 @@
       "protonmail-bridge"
       "protonvpn"
       "raycast"
+      "secretive"
       "slack"
       "sublime-text"
       "transmission"
