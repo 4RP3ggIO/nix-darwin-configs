@@ -1,4 +1,4 @@
-{ config,pkgs ... }:
+{ config, pkgs, ... }:
 
 {
   #homebrew packages
@@ -86,9 +86,11 @@
       "WiFi Explorer" = 494803304;
       "WiFi Signal" = 525912054;
       "Xcode" = 497799835;
-environment.systemPackages = with pkgs; [ 
-    zsh
-  ];
     };
   };
+
+  # Nix managed packages
+  environment.systemPackages = with pkgs; [ 
+    zsh
+  ];
 }
