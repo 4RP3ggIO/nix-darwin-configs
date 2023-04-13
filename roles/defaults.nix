@@ -67,8 +67,12 @@
       _HIHideMenuBar = true; # autohide top panel
     };
   };
-   # Add flake support 
+
+  # Add flake support 
   nix.extraOptions = ''
     experimental-features = nix-command flakes
   '';
+
+  # Use touch ID for sudo auth
+  security.pam.enableSudoTouchIdAuth = true;   
 }

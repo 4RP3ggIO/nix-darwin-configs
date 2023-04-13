@@ -2,6 +2,32 @@
 
 {
   home.stateVersion = "23.05";
+  # Zsh stuff
+  programs.zsh = {
+    enable = true;
+    enableCompletion = true;
+    enableAutosuggestions = true;
+    enableSyntaxHighlighting = true;
+
+    # Enable oh-my-zsh
+    oh-my-zsh = {
+      enable = true;
+      plugins = [
+        "aliases"
+        "battery"
+        "brew"
+        "docker"
+        "git"
+        "iterm2"
+        "macos"
+        "nmap"
+        "sudo"
+      ];
+      theme = "apple";
+    };
+  };
+
+  # Firefox stuff
   programs.firefox = {
     enable = true;
     # Handled by the Homebrew module
