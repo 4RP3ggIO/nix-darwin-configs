@@ -15,6 +15,7 @@
       plugins = [
 	"zsh-autosuggestions"
 	"zsh-syntax-highlighting"
+	"thefuck"
         "aliases"
         "battery"
         "brew"
