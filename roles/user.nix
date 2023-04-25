@@ -9,5 +9,6 @@
       pkgs.gcc
       pkgs.git
       pkgs.gnupg
+      pkgs.tmux
   ];
 }
