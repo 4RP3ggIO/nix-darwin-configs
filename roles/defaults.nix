@@ -66,6 +66,13 @@
       NSNavPanelExpandedStateForSaveMode2 = true;
       _HIHideMenuBar = true; # autohide top panel
     };
+    CustomUserPreferences = {
+      # Manage iTerm with files in ~/.config/iterm2
+      "com.googlecode.iterm2" = {
+        "PrefsCustomFolder" = "~/.config/iterm2";
+        "LoadPrefsFromCustomFolder" = 1;
+      };
+    };
   };
 
   # Add flake support 
