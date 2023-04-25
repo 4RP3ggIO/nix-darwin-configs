@@ -74,7 +74,7 @@
   "Prompt Before Closing 2" : false,
   "BM Growl" : true,
   "Mouse Reporting" : true,
-  "Command" : "~\/.nix-profile\/bin\/zsh",
+  "Command" : "~\/.nix-profile\/bin\/tmux",
   "Description" : "Default",
   "Space" : 0,
   "Screen" : -1,
