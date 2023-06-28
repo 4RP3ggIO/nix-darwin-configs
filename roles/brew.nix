@@ -39,6 +39,7 @@
     casks = [
       "1password"
       "1password-cli"
+      "airtool"
       "balenaetcher"
       "basecamp"
       "battle-net"
@@ -54,9 +55,9 @@
       "iterm2"
       "joplin"
       "lulu"
+      "mds"
       "microsoft-remote-desktop"
       "nvidia-geforce-now"
-      "pock"
       "protonmail-bridge"
       "protonvpn"
       "raycast"
@@ -64,7 +65,7 @@
       "slack"
       "sublime-text"
       "transmission"
-      "wifi-explorer-pro"
+      "wifi-explorer"
       "zoom"
     ];
     masApps = {
