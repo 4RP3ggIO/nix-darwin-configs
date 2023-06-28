@@ -22,6 +22,7 @@
       "openvpn"
       "python@3.9"
       "speedtest-cli"
+      "starship"
       "thefuck"
       "tree"
       "youtube-dl"
