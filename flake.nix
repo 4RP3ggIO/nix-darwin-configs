@@ -20,14 +20,19 @@
         specialArgs = inputs;
         modules = [ ./hosts/m1-macbook-pro.nix ];
       };
+      # m2-macbook 
+      "m2-macbook-pro" = darwin.lib.darwinSystem {
+        system = "aarch64-darwin";
+        specialArgs = inputs;
+        modules = [ ./hosts/m2-macbook-pro.nix ];
+      };
       # intel-macbook (used for CI to test updates)
       "intel-macbook" = darwin.lib.darwinSystem {
         system = "x86_64-darwin";
         specialArgs = inputs;
         modules = [ ./hosts/intel-macbook.nix ];
       };
-      # m1-macmini
-      "m1-macmini" = darwin.lib.darwinSystem {
+      # m1-macmini" = darwin.lib.darwinSystem {
         system = "aarch64-darwin";
         specialArgs = inputs;
         modules = [ ./hosts/m1-macmini.nix ];
