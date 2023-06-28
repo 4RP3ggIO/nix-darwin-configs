@@ -43,7 +43,6 @@
       "airtool"
       "balenaetcher"
       "basecamp"
-      "battle-net"
       "blockblock"
       "cscreen"
       "cyberduck"
