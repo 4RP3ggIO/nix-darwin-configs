@@ -3,7 +3,7 @@
 
 let
   hostname = "4RP3GGIO";
-  username = "gavin.anderson";
+  username = "Gavin Anderson";
 in {
   imports = [
     ../roles/m1.nix
