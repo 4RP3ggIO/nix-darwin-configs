@@ -40,6 +40,7 @@
     casks = [
       "1password"
       "1password-cli"
+      "anydesk"
       "airtool"
       "balenaetcher"
       "basecamp"
