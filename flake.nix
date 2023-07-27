@@ -32,11 +32,11 @@
         specialArgs = inputs;
         modules = [ ./hosts/intel-macbook.nix ];
       };
-      # m1-macmini" = darwin.lib.darwinSystem {
-        system = "aarch64-darwin";
-        specialArgs = inputs;
-        modules = [ ./hosts/m1-macmini.nix ];
-      };
+      #"m1-macmini" = darwin.lib.darwinSystem {
+      #  system = "aarch64-darwin";
+      #  specialArgs = inputs;
+      #  modules = [ ./hosts/m1-macmini.nix ];
+      #};
     };
   };
 }
